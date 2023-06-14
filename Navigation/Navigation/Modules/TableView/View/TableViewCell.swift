@@ -20,8 +20,8 @@ class TableViewCell: UITableViewCell {
     }
     
     func fillData(item: Contact) {
-        name.text = item.name
-        phone.text = item.phone
+        self.name.text = item.name
+        self.phone.text = item.phone
     }
 
 }

@@ -19,6 +19,8 @@
 		5E3A37802A38998700DC2D8B /* StoryboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3A377F2A38998700DC2D8B /* StoryboardTableViewController.swift */; };
 		5E3A37822A3899B200DC2D8B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3A37812A3899B200DC2D8B /* TableViewController.swift */; };
 		5E3A37852A38A3DA00DC2D8B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3A37842A38A3DA00DC2D8B /* TableViewCell.swift */; };
+		5E455C892A39FFBA007A7088 /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E455C882A39FFBA007A7088 /* ContactModel.swift */; };
+		5E455C8B2A3A0216007A7088 /* SubView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E455C8A2A3A0216007A7088 /* SubView3.swift */; };
 		5E46ADAE2A38BD79008B7AFF /* SubView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E46ADAD2A38BD79008B7AFF /* SubView1.swift */; };
 		5E46ADB02A38BDA1008B7AFF /* SubView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E46ADAF2A38BDA1008B7AFF /* SubView2.swift */; };
 /* End PBXBuildFile section */
@@ -57,6 +59,8 @@
 		5E3A377F2A38998700DC2D8B /* StoryboardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardTableViewController.swift; sourceTree = "<group>"; };
 		5E3A37812A3899B200DC2D8B /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		5E3A37842A38A3DA00DC2D8B /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		5E455C882A39FFBA007A7088 /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
+		5E455C8A2A3A0216007A7088 /* SubView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubView3.swift; sourceTree = "<group>"; };
 		5E46ADAD2A38BD79008B7AFF /* SubView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubView1.swift; sourceTree = "<group>"; };
 		5E46ADAF2A38BDA1008B7AFF /* SubView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubView2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,17 +113,10 @@
 		5E3A374E2A3897AD00DC2D8B /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				5E3A37832A38A3AA00DC2D8B /* Storyboard */,
-				5E3A374F2A3897AD00DC2D8B /* AppDelegate.swift */,
-				5E3A37512A3897AD00DC2D8B /* SceneDelegate.swift */,
-				5E3A37532A3897AD00DC2D8B /* ViewController.swift */,
-				5E3A377F2A38998700DC2D8B /* StoryboardTableViewController.swift */,
-				5E3A37812A3899B200DC2D8B /* TableViewController.swift */,
-				5E46ADAD2A38BD79008B7AFF /* SubView1.swift */,
-				5E46ADAF2A38BDA1008B7AFF /* SubView2.swift */,
-				5E3A37552A3897AD00DC2D8B /* Main.storyboard */,
+				5E8D8B802A39F05700DCA1F1 /* Modules */,
+				5E8D8B7F2A39F00C00DCA1F1 /* Base */,
+				5E8D8B7E2A39EFEF00DCA1F1 /* Application */,
 				5E3A37582A3897AE00DC2D8B /* Assets.xcassets */,
-				5E3A375A2A3897AE00DC2D8B /* LaunchScreen.storyboard */,
 				5E3A375D2A3897AE00DC2D8B /* Info.plist */,
 			);
 			path = Navigation;
@@ -142,10 +139,83 @@
 			path = NavigationUITests;
 			sourceTree = "<group>";
 		};
-		5E3A37832A38A3AA00DC2D8B /* Storyboard */ = {
+		5E3A37832A38A3AA00DC2D8B /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				5E455C872A39FF91007A7088 /* ViewModel */,
+				5E455C862A39FF8A007A7088 /* Model */,
+				5E455C852A39FF83007A7088 /* View */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		5E455C852A39FF83007A7088 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				5E3A37842A38A3DA00DC2D8B /* TableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5E455C862A39FF8A007A7088 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5E455C882A39FFBA007A7088 /* ContactModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5E455C872A39FF91007A7088 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5E3A37812A3899B200DC2D8B /* TableViewController.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5E8D8B7D2A39EFAC00DCA1F1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5E3A37532A3897AD00DC2D8B /* ViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5E8D8B7E2A39EFEF00DCA1F1 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				5E3A374F2A3897AD00DC2D8B /* AppDelegate.swift */,
+				5E3A37512A3897AD00DC2D8B /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		5E8D8B7F2A39F00C00DCA1F1 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5E3A37552A3897AD00DC2D8B /* Main.storyboard */,
+				5E3A375A2A3897AE00DC2D8B /* LaunchScreen.storyboard */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5E8D8B802A39F05700DCA1F1 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				5E8D8B812A39F07100DCA1F1 /* Storyboard */,
+				5E8D8B7D2A39EFAC00DCA1F1 /* Home */,
+				5E3A37832A38A3AA00DC2D8B /* TableView */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		5E8D8B812A39F07100DCA1F1 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5E455C8A2A3A0216007A7088 /* SubView3.swift */,
+				5E46ADAF2A38BDA1008B7AFF /* SubView2.swift */,
+				5E46ADAD2A38BD79008B7AFF /* SubView1.swift */,
+				5E3A377F2A38998700DC2D8B /* StoryboardTableViewController.swift */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -283,6 +353,8 @@
 			files = (
 				5E46ADB02A38BDA1008B7AFF /* SubView2.swift in Sources */,
 				5E3A37852A38A3DA00DC2D8B /* TableViewCell.swift in Sources */,
+				5E455C892A39FFBA007A7088 /* ContactModel.swift in Sources */,
+				5E455C8B2A3A0216007A7088 /* SubView3.swift in Sources */,
 				5E3A37542A3897AD00DC2D8B /* ViewController.swift in Sources */,
 				5E3A37502A3897AD00DC2D8B /* AppDelegate.swift in Sources */,
 				5E46ADAE2A38BD79008B7AFF /* SubView1.swift in Sources */,
