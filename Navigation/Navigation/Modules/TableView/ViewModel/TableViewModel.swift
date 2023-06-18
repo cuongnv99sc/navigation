@@ -12,7 +12,7 @@ class TableViewModel {
     private var contactlists: [Contact]
 
     init() {
-        contactlist = [Contact.init(name: "Ho Chi Minh", phone: "0972958864"),
+        contactlists = [Contact.init(name: "Ho Chi Minh", phone: "0972958864"),
                        Contact.init(name: "Ho Chi Minh", phone: "0972958864"),
                        Contact.init(name: "Ho Chi Minh", phone: "0972958864"),
                        Contact.init(name: "Ho Chi Minh", phone: "0972958864"),
@@ -31,7 +31,7 @@ class TableViewModel {
         return contactlists.count
     }
 
-    func cellForRowAt(indexPath: IndexPath) -> Animal {
+    func cellForRowAt(indexPath: IndexPath) -> Contact {
         return contactlists[indexPath.row]
     }
 }

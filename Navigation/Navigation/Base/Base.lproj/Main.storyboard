@@ -221,7 +221,7 @@
         <!--Table View Controller-->
         <scene sceneID="q5b-Gt-yoV">
             <objects>
-                <viewController storyboardIdentifier="TableViewController" id="GII-i1-z5T" customClass="TableViewController" customModule="Navigation" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TableViewController" id="GII-i1-z5T" customClass="TableViewController" customModule="Navigation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kYL-3U-UE1">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

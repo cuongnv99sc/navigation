@@ -12,7 +12,7 @@ class TableViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
 
-    var tableViewModel: TableViewModel
+    var tableViewModel: TableViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
